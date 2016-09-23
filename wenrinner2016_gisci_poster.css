@@ -1,0 +1,101 @@
+/* Print PDF */
+@media print {
+	
+	/* Base */
+    @page {
+        size: 33.1in 46.8in;
+        margin: 0.125in;
+    }
+	body{
+		-webkit-print-color-adjust: exact;
+	}
+    h1{
+        font-size: 72pt !important;
+    }
+    h2{
+        font-size: 48pt!important;
+        margin: 0!important;
+    }
+	h3{
+		font-size: 32pt!important;
+	}
+	
+	/* Bootstrap */
+	.container-fluid {
+		padding: 0 !important;
+	}
+	
+	/* Poster PDF*/
+	#footer{
+		position: absolute;
+		top: 94.7%;
+		right: 0;
+		left: 0;
+		height: 5% !important;
+	}
+	
+}
+
+/* Base */
+body {
+	font-size: 24pt !important;
+	font-family: Arial;
+}
+h1 {
+    font-weight: bold;
+}
+a {
+   outline: 0;
+}
+
+/* Modal */
+.modal-body {
+	font-size: 12pt !important;
+}
+.btn{
+	background-color: black !important;
+}
+.btn:hover {
+	opacity: 0.7 !important;
+}
+
+/* Packery Grid*/
+.grid {
+	margin-top: 1%;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+.grid-item{
+	border: 0.5mm solid black;
+	padding: 2%;
+	width: 49%;
+	min-height: 400px;
+}
+.grid-item-left{
+	margin-right: 2%;
+}
+
+/* Poster HTML */
+.figure{
+	width: 100%;
+}
+.figure:hover {
+	cursor: zoom-in;
+}
+#header{
+	padding: 3%;
+	background-color: black;
+	color: white;
+}
+#grid-start{
+	margin-bottom: -1% !important;
+}
+#footer{
+	background-color: black;
+	color: white;
+	padding-top: 1%;
+	padding-bottom: 1.5%;
+	padding-left: 3%;
+	padding-right: 3%;
+	margin-top: 1%;
+}
