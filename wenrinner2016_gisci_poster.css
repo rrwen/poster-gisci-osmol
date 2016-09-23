@@ -28,10 +28,12 @@
 	/* Poster PDF*/
 	#footer{
 		position: absolute;
-		top: 94.7%;
+		top: 93.53vh;
 		right: 0;
 		left: 0;
-		height: 5% !important;
+	}
+	#qr{
+		height: 5vh !important;
 	}
 	
 }
@@ -89,6 +91,11 @@ a {
 }
 #grid-start{
 	margin-bottom: -1% !important;
+}
+#qr{
+	background-color: white;
+	padding: 0;
+	height:20vh;
 }
 #footer{
 	background-color: black;
