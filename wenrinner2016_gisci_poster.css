@@ -1,3 +1,5 @@
+/* Richard Wen (rwen@ryerson.ca) */
+
 /* Print PDF */
 @media print {
 	
@@ -13,11 +15,11 @@
         font-size: 72pt !important;
     }
     h2{
-        font-size: 48pt!important;
-        margin: 0!important;
+        font-size: 48pt !important;
+        margin: 0 !important;
     }
 	h3{
-		font-size: 32pt!important;
+		font-size: 32pt !important;
 	}
 	
 	/* Bootstrap */
@@ -28,81 +30,94 @@
 	/* Poster PDF*/
 	#footer{
 		position: absolute;
-		top: 93.53vh;
+		top: 94.45vh;
 		right: 0;
 		left: 0;
 	}
 	#qr{
-		height: 5vh !important;
+		height: 4vh;
 	}
 	
 }
 
-/* Base */
-body {
-	font-size: 24pt !important;
-	font-family: Arial;
-}
-h1 {
-    font-weight: bold;
-}
-a {
-   outline: 0;
+/* Screen */
+@media screen {
+	h1 {
+		font-size: 36pt !important;
+	}
+	#qr {
+		height: 10vh;
+	}
 }
 
-/* Modal */
-.modal-body {
-	font-size: 12pt !important;
-}
-.btn{
-	background-color: black !important;
-}
-.btn:hover {
-	opacity: 0.7 !important;
-}
+/* All */
+@media all {
+	
+	/* Base */
+	body {
+		font-family: Arial !important;
+	}
+	h1 {
+		font-weight: bold !important;
+	}
+	a {
+	   outline: 0;
+	}
 
-/* Packery Grid*/
-.grid {
-	margin-top: 1%;
-	margin-left: 3%;
-	margin-right: 3%;
-}
-.grid-item{
-	border: 0.5mm solid black;
-	padding: 2%;
-	width: 49%;
-	min-height: 400px;
-}
-.grid-item-left{
-	margin-right: 2%;
-}
+	/* Modal */
+	.modal-body {
+		font-size: 12pt !important;
+	}
+	.btn{
+		background-color: black !important;
+	}
+	.btn:hover {
+		opacity: 0.7 !important;
+	}
 
-/* Poster HTML */
-.figure{
-	width: 100%;
-}
-.figure:hover {
-	cursor: zoom-in;
-}
-#header{
-	padding: 3%;
-	background-color: black;
-	color: white;
-}
-#grid-start{
-	margin-bottom: -1% !important;
-}
-#qr{
-	background-color: white;
-	padding: 0;
-	height:20vh;
-}
-#footer{
-	background-color: black;
-	color: white;
-	padding-top: 1%;
-	padding-bottom: 1.5%;
-	padding-left: 3%;
-	padding-right: 3%;
-	margin-top: 1%;
+	/* Packery Grid*/
+	.grid {
+		margin-top: 1%;
+		margin-left: 3%;
+		margin-right: 3%;
+		font-size: 24pt;
+	}
+	.grid-item{
+		border: 0.5mm solid black;
+		padding: 2%;
+		width: 49%;
+		min-height: 400px;
+	}
+	.grid-item-left{
+		margin-right: 2%;
+	}
+
+	/* Poster HTML */
+	.figure{
+		width: 100%;
+	}
+	.figure:hover {
+		cursor: zoom-in;
+	}
+	#header{
+		padding: 3%;
+		background-color: black;
+		color: white;
+	}
+	#grid-start{
+		margin-bottom: -1% !important;
+	}
+	#qr{
+		background-color: white;
+		padding: 0;
+	}
+	#footer{
+		background-color: black;
+		color: white;
+		padding-top: 1%;
+		padding-bottom: 1.5%;
+		padding-left: 3%;
+		padding-right: 3%;
+		margin-top: 1%;
+	}
 }
