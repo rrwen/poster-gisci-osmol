@@ -65,8 +65,10 @@
             <!-- Title -->
             <div class="col-xs-10">
                 <h1>Outlier Detection in OpenStreetMap Data using the <br>Random Forest Algorithm and Variable Contributions</h1>
-                <h2>Richard Wen and Claus Rinner</h2>
-                <h2>Department of Geography and Environmental Studies, Ryerson University</h2>
+                <div id="subtitle">
+                    <h2>Richard Wen and Claus Rinner</h2>
+                    <h2>Department of Geography and Environmental Studies, Ryerson University</h2>
+                </div>
             </div>
             
             <!-- Logo -->
@@ -77,9 +79,8 @@
         </div> <!-- Title Row -->
         
         <!-- Content -->
-		<br>
         <div class="grid" data-packery='{ "itemSelector": ".grid-item", "percentPosition": true}'>
-            <div id="grid-start" class="grid-item grid-item-left">
+            <div class="grid-item grid-item-left">
 				<h3>Objectives</h3>
 				This research experimented with a random forest algorithm on OpenStreetMap (OSM) data to:
 				<ol>
@@ -93,12 +94,39 @@
 				<a href="img/fig1_osmedit.svg" data-title="Figure 1. OpenStreetMap Contribution Process" data-lightbox="fig-1"><img class="figure" src="img/fig1_osmedit.svg"></a>
 				Figure 1. OpenStreetMap Contribution Process
 			</div>
+            <div class="grid-item">
+				<h3>2.0 Methods</h3>
+				The methods process is seen in Figure 2.
+                <ul>
+                    <li>Data: Geographic objects and tag values from OSM</li>
+                    <ul>
+                        <li>Distance to Nearest Neighbour Tag (DNNT)</li>
+                        <li>Geometry (area, length, vertices)</li>
+                    </ul>
+                    <li>Random Forest: Decision trees using random subsets from two-thirds of data</li>
+                    <ul>
+                        <li>Robust to outliers and missing data</li>
+                        <li>Efficient parallel tree creation</li>
+                        <li>Out-of-bag error measure from one-third of data</li>
+                    </ul>
+                    <li>Outlier Detection: measued with normalized proximity matrices where values above 10 are outlier suspects</li>
+                    <ul>
+                        <li>Proximity: Frequency that two objects are predicted using the same leaf node per tree</li>
+                        <li>Outliers: objects with small mean proximities to other objects given a tag value</li>
+                    </ul>
+                    <li>Variable Influence: median variable contributions for each object; ranked high to low</li>
+                    <ul>
+                        <li>Local Increments: change in probability of child and parent nodes given a tag value for a variable</li>
+                        <li>Variable Contribution: sum of local increments per tree</li>
+                    </ul>
+                </ul>
+			</div>
         </div> <!-- Content -->
         
         <!-- Footer Row -->
         <div id="footer" class="row">
             <div class="col-xs-12">
-				<a href="img/qr.svg" data-title="https://rrwen.github.io/paper-gisci2016/" data-lightbox="qr"><img id="qr" src="img/qr.svg"></a>
+				<a href="img/qr.svg" data-title="rrwen.github.io/paper-gisci2016" data-lightbox="qr"><img id="qr" src="img/qr.svg"></a>
 			</div>
         </div> <!-- Footer Row -->
         
