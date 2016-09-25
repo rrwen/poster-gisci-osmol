@@ -26,16 +26,21 @@
 	.container-fluid {
 		padding: 0 !important;
 	}
-	
+	#contact {
+		width: 15vw !important;
+	}
 	/* Poster PDF*/
 	#footer{
 		position: absolute;
-		top: 94.1vh;
+		top: 92.8vh;
 		right: 0;
 		left: 0;
 	}
 	#qr{
-		height: 4vh;
+		height: 4vh !important;
+	}
+	#footer{
+        font-size: 20pt !important;
 	}
 }
 
@@ -50,8 +55,11 @@
     h3 {
         font-size: 24pt !important;
     }
+	#footer .col-xs-1 {
+		width: 15vw !important;
+	}
 	#qr {
-		height: 10vh;
+		height: 20vh !important;
 	}
 }
 
@@ -122,6 +130,11 @@
     #qr:hover{
         cursor: zoom-in;
     }
+	#qr-txt{
+		text-align: center !important;
+		color: white;
+		
+	}
 	#footer{
 		background-color: #525659;
 		color: white;
