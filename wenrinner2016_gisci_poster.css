@@ -88,7 +88,7 @@
 		font-size: 24pt;
 	}
 	.grid-item{
-		border: 0.5mm solid black;
+		border: 0.5mm solid #525659;
 		padding: 2%;
 		width: 49%;
 		min-height: 8.8vh;
@@ -130,5 +130,6 @@
 		padding-left: 3%;
 		padding-right: 3%;
 		margin-top: 2%;
+        font-size: 18pt;
 	}
 }
