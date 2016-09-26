@@ -35,10 +35,10 @@
 		left: 0;
 		font-size: 15pt !important;
 	}
-	#qr{
+	.qr{
 		height: 4vh;
 	}
-	#qr-txt{
+	.qr-txt{
 		font-size: 24pt !important;
 	}
 }
@@ -54,10 +54,13 @@
     h3 {
         font-size: 24pt !important;
     }
-	#qr {
+	.qr {
 		height: 10vh;
 	}
-	#qr-txt{
+	.qr-container{
+		display: none;
+	}
+	.qr-txt{
 		font-size: 12pt !important;
 	}
 	#footer{
@@ -126,11 +129,11 @@
     #subtitle{
         margin-top: 2.5%;
     }
-	#qr{
+	.qr{
 		background-color: white;
 		padding: 0;
 	}
-    #qr:hover{
+    .qr:hover{
         cursor: zoom-in;
     }
 	#footer{
