@@ -37,14 +37,13 @@
 				<div class="modal-body">
 					This poster supplements a <a href="http://giscience.geog.mcgill.ca/?page_id=33" target="_blank">short paper submission</a> for the <a href="http://giscience.geog.mcgill.ca/" target="_blank">GIScience 2016</a> conference.
 					<ul>
-						<li>Figures can be zoomed in by selecting them (click or touch)</li>
-						<li>Use <a href="https://www.google.com/chrome/browser/desktop/" target="_blank">Google Chrome</a> to <a href="https://support.google.com/chrome/answer/1379552?hl=en" target="_blank">save a PDF</a> in A0 (33.1 by 46.8 in) for print</li>
+						<li>A PDF is also available for print in addition to this web friendly version</li>
 					</ul>
 					<b>Contact</b>
 					<ul>
 						<li>Richard Wen: <a href="mailto:rwen@ryerson.ca">rwen@ryerson.ca</a></li>
 						<li>Claus Rinner: <a href="mailto:crinner@ryerson.ca">crinner@ryerson.ca</a></li>
-					<ul>
+					</ul>
 				</div>
 				
 				<!-- Modal Footer -->
@@ -79,28 +78,94 @@
         </div> <!-- Title Row -->
         
         <!-- Content -->
-        <div class="grid" data-packery='{ "itemSelector": ".grid-item", "percentPosition": true}'>
-            <div class="grid-item grid-item-left">
+        <div id="content">
+            <div id="objectives" class="content-box content-box-left">
 				<h3>Objectives</h3>
-				This research experimented with a random forest algorithm on OpenStreetMap (OSM) data to:
+				This research experimented with random forest models on OpenStreetMap (OSM) data to:
 				<ol>
 					<li>Detect outlier geographic objects based on nearest neighbour distances and geometry</li>
 					<li>Determine the influence of variables for the discovered pattern</li>
 				</ol>
 			</div>
-			<div class="grid-item">
+			<div id="introduction" class="content-box content-box-left">
 				<h3>1.0 Introduction</h3>
 				OpenStreetMap (OSM) is an online platform that enables volunteers to contribute massive quantities of data by creating geographic objects with user assigned tags (Figure 1). These tags are structured as key-value pairs that enable machine learning algorithms to support user editing by identifying outlier objects and discovering patterns. This results in lowered search times for errorneous objects and user knowledge enhancements.
 				<a href="img/fig1_osmedit.svg" data-title="Figure 1. OpenStreetMap Contribution Process" data-lightbox="fig-1"><img class="figure" src="img/fig1_osmedit.svg"></a>
 				Figure 1. OpenStreetMap Contribution Process
 			</div>
-            <div class="grid-item">
+            <div id="methods" class="content-box content-box-left">
 				<h3>2.0 Data and Methods</h3>
-				The data was downloaded from Mapzen Metro Extracts (Mapzen, 2016) and processed with an automated workflow programmed in Python 3.5 (Figure 2). The random forest algorithm uses an implementation from the Scikit-learn Python library (Pedregosa et al., 2011).
+				The data was downloaded from Mapzen Metro Extracts (Mapzen, 2016) and processed with an automated workflow programmed in Python (Figure 2). The random forest algorithm uses an implementation from the Scikit-learn Python library (Pedregosa et al., 2011).
 				<a href="img/fig2_methods.svg" data-title="Figure 2. Data and Methods Process" data-lightbox="fig-2"><img class="figure" src="img/fig2_methods.svg"></a>
 				Figure 2. Automated Python Workflow
 			</div>
-            
+			<div id="results" class="content-box">
+				<h3>3.0 Results</h3>
+				A random forest model with 128 trees was used to detect outliers in a selection of Toronto, Ontario, Mapzen data (Table 1). Hospital objects from the Sunnybrook wings (Figure 3) and several historical school objects (Figure 4) were detected as outliers with the top 5 contributing variables using the median as an example.
+				<br><br>
+				Table 1. Selected Mapzen OSM Data for Toronto, Ontario
+				<table class="table">
+					<thead>
+					  <tr>
+						<th>Category</th>
+						<th>Geometry</th>
+						<th>Number of Objects</th>
+					  </tr>
+					</thead>
+					<tbody>
+					  <tr>
+						<td>Aero Ways</td>
+						<td>Line</td>
+						<td>438</td>
+					  </tr>
+					  <tr>
+						<td>Amenities</td>
+						<td>Point</td>
+						<td>1507</td>
+					  </tr>
+					  <tr>
+						<td>Places</td>
+						<td>Point</td>
+						<td>760</td>
+					  </tr>
+					  <tr>
+						<td>Roads</td>
+						<td>Line</td>
+						<td>46,812</td>
+					  </tr>
+					  <tr>
+						<td>Transport Areas</td>
+						<td>Polygon</td>
+						<td>72</td>
+					  </tr>
+					  <tr>
+						<td>Transport Points</td>
+						<td>Point</td>
+						<td>21,309</td>
+					  </tr>
+					</tbody>
+				 </table>
+				<br>
+				<a href="img/fig3_hospital.svg" data-title="Figure 3. Sunnybrook Hospital Outliers" data-lightbox="fig-3"><img class="figure" src="img/fig3_hospital.svg"></a>
+				Figure 3. Sunnybrook Hospital Outliers
+				<br><br>
+				<a href="img/fig4_school.svg" data-title="Figure 4. Historical School Outliers" data-lightbox="fig-4"><img class="figure" src="img/fig4_school.svg"></a>
+				Figure 4. Historical School Outliers
+			</div>
+			<div id="conclusion" class="content-box">
+				<h3>4.0 Conclusion</h3>
+				User experience improvements using random forest models could:
+				<ul>
+					<li>Encourage participation in volunteered geographic data collection</li>
+					<li>Improve the knowledge of inexperienced contributors</li>
+				</ul>
+				Outlier detection and variable contributions can:
+				<ul>
+					<li>Lower search times for irregular objects</li>
+					<li>Improve the interpretability of data patterns in OSM</li>
+				</ul>
+				To potentially lower the error of the random forest model, it is suggested to explore  satellite imagery and user editing histories.
+			</div>
         </div> <!-- Content -->
         
         <!-- Footer Row -->
@@ -109,16 +174,19 @@
 				<a href="img/qr.svg" data-title="rrwen.github.io/paper-gisci2016" data-lightbox="qr"><img class="qr" src="img/qr.svg"></a>
 				<div class="qr-txt">qrd.by/l4j68g</div>
 			</div>
-			<div class="col-xs-5 footer-col">
+			<div class="col-xs-6 footer-col">
                 <b>References</b>
 				<ul>
-					<li>Mapzen. (2016, March 10). Metro Extracts. Retrieved from Mapzen: https://mapzen.com/data/metro-extracts/</li>
+					<li>Breiman, L. (2001). Random Forests. Machine Learning, 45(1), 5-32</li>
+					<li>Breiman, L., & Cutler, A. (2004). Random Forests. Retrieved March 23, 2016, from Random Forests: https://www.stat.berkeley.edu/~breiman/</li>
+					<li>Mapzen. (2016, March 10). Metro Extracts. Retrieved from Mapzen: https://mapzen.com/data/metro-extracts</li>
+					<li>Palczewska, A., Palczewski, J., Robinson, R. M., & Neagu, D. (2014). Interpreting random forest classification models using a feature contribution method. Integration of Reusable Systems, 193-218.</li>
                     <li>Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O., Duchesnay, É. (2011). Scikit-learn: Machine Learning in Python. Journal of Machine Learning Research, 2825-2830.</li>
                 </ul>
             </div>
-			<div class="col-xs-3 footer-col">
+			<div class="col-xs-4 footer-col">
                 <b>Acknowledgements</b>
-                <p>We would like to thank the Geothink Social Sciences and Humanities Research Council (SSHRC) Partnership Grant for the funding provided during the duration of this research. Map data copyrighted OpenStreetMap contributors and available from <a href="http://www.openstreetmap.org" style="color: white;">http://www.openstreetmap.org</a>
+                <p>We would like to thank the Geothink Social Sciences and Humanities Research Council (SSHRC) Partnership Grant for the funding provided during the duration of this research. Map data copyrighted OpenStreetMap contributors and available from http://www.openstreetmap.org
             </div>
             <div class="col-xs-2 footer-col">
                 <b>Contact</b>
