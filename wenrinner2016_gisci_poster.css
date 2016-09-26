@@ -37,7 +37,6 @@
 		right: 0;
 		left: 0;
 		font-size: 15pt !important;
-		padding: 0.5in;
 	}
 	.qr{
 		height: 2in;
@@ -46,7 +45,7 @@
 		font-size: 24pt !important;
 	}
 	.content-box{
-		width: 15in;
+		width: 15.3in;
 	}
 	.content-box-left{
 		margin-right: 2%;
@@ -77,13 +76,13 @@
 	#results{
 		position: absolute;
 		top: 7in;
-		left: 17in;
+		left: 16.8in;
 		height: 29in;
 	}
 	#conclusion{
 		position: absolute;
 		top: 36.5in;
-		left: 17in;
+		left: 16.8in;
 		height: 6.25in;
 	}
 }
