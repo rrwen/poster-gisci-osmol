@@ -1,7 +1,7 @@
 /* Richard Wen (rwen@ryerson.ca) */
 
 /* Print PDF */
-@media print {
+@media print and (min-resolution: 300dpi) {
 	
 	/* Base */
     @page {
