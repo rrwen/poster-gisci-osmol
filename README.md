@@ -1,8 +1,8 @@
 # Outlier Detection in OpenStreetMap Data using the RandomForest Algorithm and Variable Contributions
 A [short peer-reviewed paper](http://giscience.geog.mcgill.ca/?page_id=33) and poster for the [Ninth International Conference on Geographic Information Science](http://giscience.geog.mcgill.ca) in Montreal, Canada from September 27, 2016 to September 30, 2016.
 
-* [Short Paper](https://github.com/rrwen/research-gisci2016/blob/master/paper.pdf)
-* [Poster](https://github.com/rrwen/research-gisci2016/blob/master/poster.pdf)
+* [Short Paper PDF](https://github.com/rrwen/research-gisci2016/blob/master/paper.pdf)
+* [Poster PDF](https://github.com/rrwen/research-gisci2016/blob/master/poster.pdf)
 * [Poster Website](https://rrwen.github.io/research-gisci2016)
 
 ## Abstract
