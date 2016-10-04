@@ -12,9 +12,7 @@ OpenStreetMap (OSM) data consists of digitized geographic objects with semantic 
 We would like to thank the Geothink Social Sciences and Humanities Research Council (SSHRC) Partnership Grant for the funding provided during the duration of this research. Map data copyrighted OpenStreetMap contributors and available from http://www.openstreetmap.org
 
 ## Code
-The code used in this short paper was developed for a Masters thesis available at:
-
-[github.com/rrwen/msa-thesis](https://github.com/rrwen/msa-thesis)
+The code used in this short paper was developed for a Masters thesis available at [github.com/rrwen/msa-thesis](https://github.com/rrwen/msa-thesis)
 
 ## Contact
 * Richard Wen (rwen@ryerson.ca)
